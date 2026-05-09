@@ -1,5 +1,6 @@
 # config.py
 # All settings for CASR project
+# This is K=4 experiment version
 
 # ─────────────────────────────────────────
 # DATASET SETTINGS
@@ -10,13 +11,27 @@ TEST_DAYS  = [6, 7]
 
 # ─────────────────────────────────────────
 # S-CACHE SETTINGS
+# K=4 EXPERIMENT VERSION
+# Original paper used K=3
+# We test K=4 to see if finer
+# granularity improves performance
 # ─────────────────────────────────────────
-NUM_QUEUES             = 3
-QUEUE_BOUNDARIES       = [0, 1, 60, float('inf')]
 
-# Higher initial capacity = better results
-INITIAL_QUEUE_CAPACITY = [5000, 500, 100]
-WINDOW_CACHE_RATIO     = 0.2
+# CHANGED FROM 3 TO 4 FOR EXPERIMENT
+NUM_QUEUES = 4
+
+# CHANGED: Split Queue 1 (1-60s) into
+# Queue 1 (1-30s) and Queue 2 (30-60s)
+# Original: [0, 1, 60, inf]
+# New:      [0, 1, 30, 60, inf]
+QUEUE_BOUNDARIES = [0, 1, 30, 60, float('inf')]
+
+# CHANGED: Added 4th queue capacity
+# Original: [5000, 500, 100]
+# New:      [5000, 500, 200, 50]
+INITIAL_QUEUE_CAPACITY = [5000, 500, 200, 50]
+
+WINDOW_CACHE_RATIO = 0.2
 
 # ─────────────────────────────────────────
 # SERVER SETTINGS
@@ -26,15 +41,11 @@ DEFAULT_CONTAINER_MEMORY_MB = 128
 
 # ─────────────────────────────────────────
 # KEY SETTING: NUMBER OF FUNCTIONS
-# This must match between train and evaluate
-# 2000 = realistic single server simulation
 # ─────────────────────────────────────────
 NUM_FUNCTIONS = 2000
 
 # ─────────────────────────────────────────
 # KEY SETTING: CALLS PER WORKLOAD
-# Higher = more accurate but slower
-# 100000 = good balance
 # ─────────────────────────────────────────
 EVAL_CALLS = 100000
 
@@ -47,7 +58,7 @@ SCALING_FACTOR = 0.25
 
 # ─────────────────────────────────────────
 # PPO SETTINGS
-# Exact values from paper Table 2
+# Same as paper Table 2
 # ─────────────────────────────────────────
 LEARNING_RATE_ACTOR  = 0.001
 LEARNING_RATE_CRITIC = 0.001
@@ -65,7 +76,11 @@ EPOCHS_PER_UPDATE    = 10
 # ─────────────────────────────────────────
 MAX_EPISODES      = 200
 CALLS_PER_EPISODE = 100000
-MODEL_SAVE_PATH   = "trained_model/"
+
+# CHANGED: Separate folder for K=4 model
+# So K=3 trained model is not overwritten!
+MODEL_SAVE_PATH   = "trained_model_k4/"
+
 PRINT_EVERY       = 10
 
 # ─────────────────────────────────────────
@@ -75,21 +90,34 @@ FIXED_KEEPALIVE_SECONDS = 600
 
 # ─────────────────────────────────────────
 # RESULTS SETTINGS
+# CHANGED: Separate folder for K=4 results
+# So K=3 results are not overwritten!
 # ─────────────────────────────────────────
 THETA_VALUES_TO_TEST = [0.2, 0.4, 0.6, 0.8]
-RESULTS_PATH         = "results/"
+RESULTS_PATH         = "results_k4/"
 
 # ─────────────────────────────────────────
 # COOLING SETTINGS
-# Prevents laptop overheating
 # ─────────────────────────────────────────
-COOLING_BETWEEN_ALGORITHMS = 30   # seconds
-COOLING_BETWEEN_WORKLOADS  = 120  # seconds
+COOLING_BETWEEN_ALGORITHMS = 30
+COOLING_BETWEEN_WORKLOADS  = 120
 
 # ─────────────────────────────────────────
-# YOUR OWN EXPERIMENT
-# Change NUM_QUEUES to 4 when experimenting
+# K=4 EXPERIMENT NOTES
 # ─────────────────────────────────────────
-YOUR_NUM_QUEUES       = 4
-YOUR_QUEUE_BOUNDARIES = [0, 1, 30, 60,
-                         float('inf')]
+# Original paper K=3:
+#   Queue 0: 0-1s   (lightweight HTTP)
+#   Queue 1: 1-60s  (medium functions)
+#   Queue 2: 60+s   (heavy ML)
+#
+# Our K=4 experiment:
+#   Queue 0: 0-1s   (lightweight HTTP)
+#   Queue 1: 1-30s  (medium-light)
+#   Queue 2: 30-60s (medium-heavy)
+#   Queue 3: 60+s   (heavy ML)
+#
+# Hypothesis: Splitting the dominant
+# Queue 1 (90% of Azure calls) into
+# two groups allows agent to manage
+# them with different strategies
+# potentially improving performance

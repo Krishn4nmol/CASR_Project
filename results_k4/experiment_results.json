@@ -1,0 +1,188 @@
+{
+  "Common": {
+    "CASR": {
+      "cold_start_rate": 88.81099999999999,
+      "avg_cold_start_overhead": 8.615621235283413,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 88811.0,
+      "total_warm_starts": 11189.0,
+      "total_cold_overhead": 861562.1235283413,
+      "total_wmt": 0.0
+    },
+    "S-Cache": {
+      "cold_start_rate": 87.888,
+      "avg_cold_start_overhead": 8.559382073234481,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 87888.0,
+      "total_warm_starts": 12112.0,
+      "total_cold_overhead": 855938.2073234482,
+      "total_wmt": 0.0
+    },
+    "LCS": {
+      "cold_start_rate": 87.152,
+      "avg_cold_start_overhead": 9.017149220163502,
+      "avg_wasted_memory_time": 7.563120962415116,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 87152.0,
+      "total_warm_starts": 12848.0,
+      "total_cold_overhead": 901714.9220163502,
+      "total_wmt": 756312.0962415116
+    },
+    "FaaSCache": {
+      "cold_start_rate": 99.99900000000001,
+      "avg_cold_start_overhead": 9.646261209874439,
+      "avg_wasted_memory_time": 4.956722479053552e-06,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 99999.0,
+      "total_warm_starts": 1.0,
+      "total_cold_overhead": 964626.120987444,
+      "total_wmt": 0.49567224790535525
+    },
+    "Hist": {
+      "cold_start_rate": 61.214,
+      "avg_cold_start_overhead": 5.961890639885163,
+      "avg_wasted_memory_time": 24.96995618005149,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 61214.0,
+      "total_warm_starts": 38786.0,
+      "total_cold_overhead": 596189.0639885163,
+      "total_wmt": 2496995.618005149
+    },
+    "Fixed": {
+      "cold_start_rate": 50.673,
+      "avg_cold_start_overhead": 4.900191409420537,
+      "avg_wasted_memory_time": 1.1220783519497908,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 50673.0,
+      "total_warm_starts": 49327.0,
+      "total_cold_overhead": 490019.1409420537,
+      "total_wmt": 112207.83519497908
+    }
+  },
+  "Significant": {
+    "CASR": {
+      "cold_start_rate": 90.252,
+      "avg_cold_start_overhead": 9.779375726829112,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 90252.0,
+      "total_warm_starts": 9748.0,
+      "total_cold_overhead": 977937.5726829112,
+      "total_wmt": 0.0
+    },
+    "S-Cache": {
+      "cold_start_rate": 92.794,
+      "avg_cold_start_overhead": 9.985184632661218,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 92794.0,
+      "total_warm_starts": 7206.0,
+      "total_cold_overhead": 998518.4632661218,
+      "total_wmt": 0.0
+    },
+    "LCS": {
+      "cold_start_rate": 88.142,
+      "avg_cold_start_overhead": 10.433791995547805,
+      "avg_wasted_memory_time": 7.010643456055863,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 88142.0,
+      "total_warm_starts": 11858.0,
+      "total_cold_overhead": 1043379.1995547805,
+      "total_wmt": 701064.3456055863
+    },
+    "FaaSCache": {
+      "cold_start_rate": 100.0,
+      "avg_cold_start_overhead": 11.132240791507678,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 100000.0,
+      "total_warm_starts": 0.0,
+      "total_cold_overhead": 1113224.0791507678,
+      "total_wmt": 0.0
+    },
+    "Hist": {
+      "cold_start_rate": 61.641999999999996,
+      "avg_cold_start_overhead": 6.9291572310236065,
+      "avg_wasted_memory_time": 25.70513022275954,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 61642.0,
+      "total_warm_starts": 38358.0,
+      "total_cold_overhead": 692915.7231023606,
+      "total_wmt": 2570513.022275954
+    },
+    "Fixed": {
+      "cold_start_rate": 50.7,
+      "avg_cold_start_overhead": 5.6556819770652895,
+      "avg_wasted_memory_time": 1.0920727898764258,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 50700.0,
+      "total_warm_starts": 49300.0,
+      "total_cold_overhead": 565568.1977065289,
+      "total_wmt": 109207.27898764257
+    }
+  },
+  "Random": {
+    "CASR": {
+      "cold_start_rate": 81.655,
+      "avg_cold_start_overhead": 8.762979370880172,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 81655.0,
+      "total_warm_starts": 18345.0,
+      "total_cold_overhead": 876297.9370880172,
+      "total_wmt": 0.0
+    },
+    "S-Cache": {
+      "cold_start_rate": 84.82600000000001,
+      "avg_cold_start_overhead": 9.032825040435629,
+      "avg_wasted_memory_time": 0.0,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 84826.0,
+      "total_warm_starts": 15174.0,
+      "total_cold_overhead": 903282.5040435629,
+      "total_wmt": 0.0
+    },
+    "LCS": {
+      "cold_start_rate": 72.705,
+      "avg_cold_start_overhead": 8.329143637499929,
+      "avg_wasted_memory_time": 5.582674016431553,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 72705.0,
+      "total_warm_starts": 27295.0,
+      "total_cold_overhead": 832914.3637499928,
+      "total_wmt": 558267.4016431553
+    },
+    "FaaSCache": {
+      "cold_start_rate": 99.99900000000001,
+      "avg_cold_start_overhead": 9.773126017939523,
+      "avg_wasted_memory_time": 4.8452506900773964e-06,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 99999.0,
+      "total_warm_starts": 1.0,
+      "total_cold_overhead": 977312.6017939524,
+      "total_wmt": 0.4845250690077396
+    },
+    "Hist": {
+      "cold_start_rate": 61.324,
+      "avg_cold_start_overhead": 6.0130142504442805,
+      "avg_wasted_memory_time": 12.282139483571651,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 61324.0,
+      "total_warm_starts": 38676.0,
+      "total_cold_overhead": 601301.4250444281,
+      "total_wmt": 1228213.948357165
+    },
+    "Fixed": {
+      "cold_start_rate": 51.151,
+      "avg_cold_start_overhead": 5.018243632900838,
+      "avg_wasted_memory_time": 8.71852046677042,
+      "total_invocations": 100000.0,
+      "total_cold_starts": 51151.0,
+      "total_warm_starts": 48849.0,
+      "total_cold_overhead": 501824.3632900838,
+      "total_wmt": 871852.0466770419
+    }
+  }
+}
