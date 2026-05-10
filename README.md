@@ -70,6 +70,7 @@ implementation of the CASR algorithm published in:
 
 ## Project Structure
 
+```
 CASR_Project/
 ├── config.py          ← All hyperparameters and settings
 ├── simulator.py       ← Azure dataset loader and simulator
@@ -83,7 +84,9 @@ CASR_Project/
 ├── results_k4/        ← K=4 experiment results and graphs
 ├── trained_model/     ← K=3 trained PPO model
 ├── trained_model_k4/  ← K=4 trained PPO model
-└── CASR_Implementation_Study.ipynb ← Complete study notebook
+└── CASR_Implementation_Study.ipynb
+```
+
 ---
 
 ## Algorithm Overview
