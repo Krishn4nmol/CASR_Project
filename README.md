@@ -161,18 +161,21 @@ by splitting the dominant Queue 1 (85.3% of calls):
 ### Setup Steps
 
 **Step 1: Clone repository**
-
+```
 git clone https://github.com/Krishn4nmol/CASR_Project.git
 cd CASR_Project
+```
 
 **Step 2: Create virtual environment**
-
+```
 python -m venv casr_env
 casr_env\Scripts\activate
+```
 
 **Step 3: Install packages**
-
+```
 pip install -r requirements.txt
+```
 
 **Step 4: Download Azure dataset**
 
