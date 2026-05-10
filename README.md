@@ -187,41 +187,43 @@ Place CSV files in data/ folder.
 ## How to Run
 
 ### Train PPO Agent
-
+```
 python train.py full
-
+```
 Training takes approximately 5 minutes for 200 episodes.
 
 ### Evaluate All Algorithms
-
+```
 python evaluate.py
-
+```
 Evaluation takes approximately 2 hours with cooling breaks.
 
 ### View Interactive Results
-
+```
 jupyter notebook
-
+```
 Open CASR_Implementation_Study.ipynb
 
 ---
 
 ## Training Results
 
-### PPO Convergence (K=3)
-
-Total episodes:   200
-Best reward:      -0.0447
-Training time:    ~5 minutes
+### PPO Convergence K=3
+```
+Total episodes:      200
+Best reward:         -0.0447
+Training time:       ~5 minutes
 WMT during training: 0.000s always
+```
 
-### PPO Convergence (K=4)
-
-Total episodes:   200
-Best reward:      -0.1067
-Training time:    ~5 minutes
-State dimensions: 28 (4 x 7)
-Action space:     81 (3^4)
+### PPO Convergence K=4
+```
+Total episodes:      200
+Best reward:         -0.1067
+Training time:       ~5 minutes
+State dimensions:    28 (4 x 7)
+Action space:        81 (3^4)
+```
 
 ---
 
