@@ -257,10 +257,15 @@ Fixed achieves 51% cold start rate
 BUT wastes 1-9 seconds per invocation!
 
 CASR achieves:
+
 ✅ Zero wasted memory time
+
 ✅ Beats FaaSCache by 3.8-14.9%
+
 ✅ Sustainable for production use
+
 ✅ Automatically adapts to workload
+
 
 ---
 
@@ -285,10 +290,15 @@ CASR achieves:
 ## Author
 
 **Anmol Krishna**
+
 Student Researcher
+
 KIIT University, Bhubaneswar, India
+
 GitHub: [Krishn4nmol](https://github.com/Krishn4nmol)
+
 Email: anmolkrishna80@gmail.com
+
 
 ---
 
