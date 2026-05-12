@@ -280,13 +280,6 @@ CASR achieves:
 
 
 
-### K=3 vs K=4 Comparison
-
-
-![Comparison](results/k3_vs_k4_comparison.png)
-
-
-
 ---
 
 ## Author
@@ -316,6 +309,7 @@ If you use this code please cite the original paper:
   author = {Yu Chen and Bo Liu and Weiwei Lin 
             and Yulin Guo and Zhiping Peng}
 }
+```
 
 ---
 
