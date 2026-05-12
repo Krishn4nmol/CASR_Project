@@ -24,7 +24,7 @@
 
 
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20132348-blue)](https://doi.org/10.5281/zenodo.20132348)
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20132348.svg)](https://doi.org/10.5281/zenodo.20132348)
 
 
 
@@ -53,6 +53,22 @@ implementation of the CASR algorithm published in:
 - Evaluated on real Microsoft Azure Functions 2019 dataset
 - Novel K=4 queue granularity experiment extending the paper
 - Complete Jupyter notebook with live interactive demos
+
+---
+
+## Publications
+
+**Research Paper:**
+"Reproduction and Extension of CASR:
+A Cache-Based Adaptive Scheduler for
+Serverless Computing with Novel K=4
+Queue Granularity Analysis"
+
+[![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20135461.svg)](https://doi.org/10.5281/zenodo.20135461)
+
+**Code Repository:**
+
+[![Code DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20132348.svg)](https://doi.org/10.5281/zenodo.20132348)
 
 ---
 
