@@ -30,9 +30,11 @@
 This repository presents a complete from-scratch
 implementation of the CASR algorithm published in:
 
-> Chen et al., "CASR: Cache-Based Adaptive Scheduler
-> for Serverless Runtime", Future Generation Computer
-> Systems, 2025.
+> Y. Chen, B. Liu, W. Lin, Y. Guo, and Z. Peng,
+> "CASR: Optimizing cold start and resources
+> utilization in serverless computing,"
+> Future Generation Computer Systems,
+> vol. 170, p. 107851, 2025.
 
 ### What Makes This Project Unique
 - Implemented entirely from scratch in Python
