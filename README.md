@@ -264,19 +264,68 @@ CASR achieves:
 
 ---
 
+## Results Graphs
+
+### K=3 Training Convergence
+
+
+![Training](results/training_curves.png)
+
+
+
+### K=3 Complete Comparison
+
+
+![K3 Results](results/combined_comparison.png)
+
+
+
+### K=3 vs K=4 Comparison
+
+
+![Comparison](results/k3_vs_k4_comparison.png)
+
+
+
+---
+
 ## Author
 
 **Anmol Krishna**
 Student Researcher
+KIIT University, Bhubaneswar, India
 GitHub: [Krishn4nmol](https://github.com/Krishn4nmol)
+Email: anmolkrishna80@gmail.com
+
+---
+
+## Citation
+
+If you use this code please cite the original paper:
+
+```bibtex
+@article{CHEN2025107851,
+  title = {CASR: Optimizing cold start and resources 
+           utilization in serverless computing},
+  journal = {Future Generation Computer Systems},
+  volume = {170},
+  pages = {107851},
+  year = {2025},
+  issn = {0167-739X},
+  doi = {10.1016/j.future.2025.107851},
+  author = {Yu Chen and Bo Liu and Weiwei Lin 
+            and Yulin Guo and Zhiping Peng}
+}
 
 ---
 
 ## Reference
 
-Chen et al., "CASR: Cache-Based Adaptive Scheduler
-for Serverless Runtime", Future Generation Computer
-Systems, 2025.
+Y. Chen, B. Liu, W. Lin, Y. Guo, and Z. Peng,
+"CASR: Optimizing cold start and resources utilization
+in serverless computing," Future Generation Computer
+Systems, vol. 170, p. 107851, 2025,
+doi: 10.1016/j.future.2025.107851.
 
 ---
 
